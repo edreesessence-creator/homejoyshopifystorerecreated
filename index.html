@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HomeJoy Online offers stylish and practical home essentials designed to make everyday living more comfortable and enjoyable.">
+    <meta name="author" content="Edrees Essence Digital Solution">
+    <meta name="Keywords" content="Home Essentials">
+    <title>Homejoy online</title>
+    <style>
+
+        /* anouncement-bar */
+        .anouncement-bar {
+            color: aliceblue;
+            background-color: brown;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            padding-left: 55px;
+        }
+        .announce{
+            justify-self: center;
+            font-size: 32px;
+        }
+
+        /* navigation-bar */
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imh {
+            height: 300px;
+            /* overflow-x: hidden; */
+            overflow-y: hidden;
+        }
+
+        /* collections-List */
+        .collections-list {
+            display: flex;
+            gap: 30px;
+            margin-left: 45px;
+            font-size: large;
+            color: rgb(169, 221, 169);
+            font-family: serif;
+            text-decoration: none;
+            justify-self: start;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+
+        a {
+            color: rgb(145, 226, 145);
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 20px;
+            overflow-anchor: hidden;
+        }
+
+        .anchor {
+            color: rgba(180, 151, 21, 0.966);
+            margin-left: 200px;
+            font-size: 50px;
+            font-weight: bolder;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .anchor:hover {
+            text-decoration: underline;
+            content: "arrow";
+            position: absolute;
+            cursor: pointer;
+            color: orchid;
+            font-size: xx-large;
+            font-style: italic;
+            font-size: 50px;
+            text-transform: uppercase;
+            text-decoration-line: calc();
+        }
+
+
+        .collections-list:hover {
+            color: green;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            background-image: url(hero1.webp);
+            height: 100vh;
+            margin-bottom: 80px;
+            margin-top: 30px;
+            color: goldenrod;
+            font-size: 70px;
+        }
+
+        button {
+            font-size: 200;
+            font-weight: 500;
+            font-style: bold;
+            border-radius: 50px;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-left: 200px;
+            background-color: white;
+            color: black;
+        }
+
+        .hero-text {
+            margin-left: 200px;
+            padding-top: 70px;
+            /* margin-top: 90px; */
+        }
+
+        .but {
+            color: black;
+            font-size: xx-large;
+        }
+
+        /* collections-block-display */
+        .collections-block-display {
+            display: block;
+            line-height: 90px;
+            margin-top: 90px;
+        }
+
+        .collection-one,
+        .collection-two,
+        .collection-three,
+        .collection-four,
+        .collection-five {
+            display: flex;
+            justify-content: space-evenly;
+            vertical-align: top;
+            vertical-align: bottom;
+            margin-top: 100px;
+
+        }
+
+        .text {
+            font-size: xx-large;
+            font-weight: 700;
+            margin-top: 0;
+        }
+
+        .texts {
+            font-weight: 200;
+            line-height: 80px;
+            margin-top: 0;
+            font-size: larger;
+            text-align: unset;
+            /* writing-mode: vertical-rl; */
+            text-orientation: mixed;
+        }
+
+        /*about */
+        .about {
+            background-color: green;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            line-height: 50px;
+            display: block;
+            text-align: justify;
+            margin-left: 0px;
+            line-height: 50px;
+        }
+
+        .about-button {
+            display: inline-block;
+            justify-content: center;
+            margin-left: 1100px;
+            border-radius: 10px;
+            margin-top: 250px;
+        }
+
+        .about-head {
+            /* display: flex; */
+            justify-items: center;
+            margin-left: 950px;
+            font-size: 44px;
+            padding-top: 100px;
+        }
+
+        .momo {
+            justify-items: center;
+            margin-left: 1000px;
+            font-size: 28px;
+        }
+
+        .mew {
+            justify-items: center;
+            margin-left: 750px;
+            font-size: 28px;
+        }
+
+        /* testimonials */
+        .testimonials {
+            display: block;
+        }
+
+        .clients {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 75px;
+        }
+
+        .client {
+            justify-self: center;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        hr {
+            opacity: 90%;
+        }
+
+        .heading {
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+            justify-self: center;
+        }
+
+        .says {
+            font-size: 32px;
+            justify-self: center;
+            color: gray;
+        }
+
+        .names {
+            font-size: 28px;
+            justify-self: center;
+        }
+
+        .headingss {
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+            justify-self: center;
+        }
+
+        .say {
+            font-size: 32px;
+            justify-self: center;
+            color: gray;
+        }
+
+        
+        .input {
+            width: 500px;
+            height: 3vh;
+            font-size: 32px;
+            margin-left: 1100px;
+            margin-top: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <!-- anouncement-ba -->
+        <div class="anouncement-bar">
+            <p class="announce">Welcome to our store</p>
+        </div>
+
+        <!-- navigation bar -->
+        <nav class="navigation">
+            <div class="imh"><img src="homejoy logo.webp" alt="Homejoy logo"></div>
+            <div class="icons">
+                &#8981;
+                &#128722;
+            </div>
+        </nav>
+
+        <!-- collections-List -->
+        <div class="collections-list">
+            <p><a href="https://homejoy.online/">Home</a></p>
+            <p><a href="https://homejoy.online/collections">Collections</a></p>
+            <p><a href="https://homejoy.online/pages/contact">Contact</a></p>
+            <p><a href="https://homejoy.online/collections/kitchen-joy">Kitchen Joy</a></p>
+            <p><a href="https://homejoy.online/collections/bathroomjoy">Bathroom joy</a></p>
+            <p><a href="https://homejoy.online/collections/bedroomjoy">Bedroom joy</a></p>
+            <p><a href="https://homejoy.online/collections/decorjoy">Decor joy</a></p>
+            <p><a href="https://homejoy.online/collections/homejoy-lounge">Lounge Joy</a></p>
+        </div>
+
+        <!-- Hero-section -->
+        <div class="hero-section">
+            <h1 class="hero-text">Designed to Delight. <br> Made for Joy</h1>
+            <p class="hero-text">Design a home of joy, a place of love, a space of comfort. It’s <br> not just a home,
+                it’s where your
+                heart is.</p>
+            <button><a class="but" href="https://homejoy.online/collections">SHOP NOW</a></button>
+        </div>
+
+        <!-- collections-block-display -->
+
+        <div class="collections-block-display">
+            <!-- collection-one -->
+            <div class="collection-one">
+                <div class="image"><img src="homejoy kitchen.webp" alt="homejoy kitchen image"></div>
+                <div class="text">
+                    <h1>KitchenJoy – Function Meets Form</h1>
+                    <p class="texts">Where everyday cooking becomes an act of joy. Discover a curated range of kitchen
+                        <br>
+                        essentials, modern cookware, and home dining décor designed to bring ease, style, and soul <br>
+                        into your daily routine.
+                    </p>
+                    <a class="anchor" href="https://homejoy.online/collections/kitchen-joy">Enjoy</a>
+                </div>
+            </div>
+
+            <!-- collection-two -->
+            <div class="collection-two">
+                <div class="text">
+                    <h1>BedroomJoy – For Comfort and Joy</h1>
+                    <p class="texts">Welcome to BedroomJoy, your personal retreat of softness, calm, and connection.
+                        This <br>
+                        collection is designed to help you create a bedroom sanctuary that feels as good as it looks —
+                        <br> a space to rest, restore, and dream.
+                    </p>
+                    <a class="anchor" href="https://homejoy.online/collections/bedroomjoy">Enjoy</a>
+                </div>
+                <div class="image"><img src="homejoy bedroom.webp" alt="HomeJoy BedRoom"></div>
+            </div>
+
+            <!-- collection-three -->
+            <div class="collection-three">
+                <div class="image"><img src="homejoy bathroom.webp" alt="HomeJoy BathRoom"></div>
+                <div class="text">
+                    <h1>BathroomJoy – Serenity in Every Detail</h1>
+                    <p class="texts">Step into BathroomJoy, your sanctuary of calm and clean design. Our curated
+                        collection
+                        of <br>bathroom décor, storage essentials, and self-care accessories turns daily routines into
+                        <br> moments of restoration.
+                    </p>
+                    <a class="anchor" href="https://homejoy.online/collections/bathroomjoy">Enjoy</a>
+                </div>
+            </div>
+
+            <!-- collection-four -->
+            <div class="collection-four">
+                <div class="text">
+                    <h1>DecorJoy – A Touch of Happiness</h1>
+                    <p class="texts">Welcome to DecorJoy, where every detail tells a story. This collection brings
+                        together modern
+                        <br> home décor, statement accents, and artful accessories designed to fill your space with
+                        <br> warmth, beauty, and soul.
+                    </p>
+                    <a class="anchor" href="https://homejoy.online/collections/decorjoy">Enjoy</a>
+                </div>
+                <div class="image"><img src="homejoy decoy.webp" alt="Deocr Joy"></div>
+            </div>
+
+            <!-- collection-five -->
+            <div class="collection-five">
+                <div><img src="homejoy lounge.webp" alt="Lounge"></div>
+                <div class="text">
+                    <h1>LoungeJoy – Relaxing Finds Its Rhythm</h1>
+                    <p class="texts">Welcome to LoungeJoy, the art of effortless living. This collection celebrates
+                        comfort, calm,
+                        <br> and connection — inviting you to slow down, sink in, and savour every moment..
+                    </p>
+                    <a class="anchor" href="https://homejoy.online/collections/homejoy-lounge">Enjoy</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- about -->
+        <div class="about">
+            <h1 class="about-head">Design some joy in your home</h1>
+
+            <h3 class="momo">Designing joy into every corner of your home.</h4>
+
+                <p class="mew">It’s not just about objects — it’s about intention. HomeJoy is where form meets feeling,
+                    where every item
+                    <br> carries beauty, function, and a soft kind of magic. We believe that joy is not a luxury — it’s
+                    a
+                    design <br> principle. And your home is the canvas.
+                </p>
+
+                <p class="mew">From the quiet curve of a wooden bowl to the graceful pour of a gold-handled ladle, every
+                    detail is <br>
+                    curated to elevate your daily rituals — not with noise, but with presence.</p>
+
+                <h3 class="momo">HomeJoy is a philosophy.</h3>
+
+                <p class="mew">A reminder that the way we live… shapes the way we feel.</p>
+
+                <button class="about-button"><a href="https://homejoy.online/collections">BUY NOW</a></button>
+        </div>
+        <!-- testimonials -->
+        <div class="testimonials">
+            <div class="heading">
+                <h1>What Our Customers Are Saying</h1>
+            </div>
+            <div class="clients">
+                <div class="client">
+                    <h1 class="says">Game-Changer for Kitchen!</h1>
+                    <h4 class="says">I absolutely love these kitchen containers! The airtight <br> seals keep my dry
+                        goods fresh for much
+                        longer, and I can <br> finally get rid of all the mismatched containers I had.</h4>
+                    <hr>
+                    <h3 class="names">Sarah M.</h3>
+                </div>
+                <div class="client">
+                    <h1 class="says">Perfect for Meal Prep!</h1>
+                    <h4 class="says">These containers are a lifesaver for my meal prep. The size <br> options are
+                        perfect for portioning
+                        out meals, and the <br> airtight lids keep everything fresh throughout the week.</h4>
+                    <hr>
+                    <h3 class="names">Emily R.</h3>
+                </div>
+                <div class="client">
+                    <h1 class="says">Durable and Practical!</h1>
+                    <h4 class="says">I’ve been using these containers for a few months now, and <br> they’ve exceeded my
+                        expectations.
+                        They’re super durable <br> and don’t stain or warp like others that I’ve used.</h4>
+                    <hr>
+                    <h3 class="names">Jane T.</h3>
+                </div>
+            </div>
+            <div class="news">
+                <div class="headingss">
+                    <h1>Stay Updated with the Latest!</h1>
+                </div>
+                <p class="say">Sign up for our newsletter and be the first to know about exclusive offers, new product
+                    arrivals, and helpfu <br>l tips for home and kitchen organization. Don’t miss out on special
+                    discounts and updates—we’ve got <br> something exciting for you!</p>
+
+                <input class="input" type="text" placeholder="Email">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
